@@ -7,6 +7,7 @@ function App() {
     <div className="d-flex align-items-center min-vh-100">
       <Container fluid>
           <Row>
+            <p>This is the new site!</p>
             <p>We're getting married!</p>
             <p>Saturday, May 21, 2022</p>
           </Row>
