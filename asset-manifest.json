@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mrmusselman1/wedding-site-2/static/css/main.56e6221f.css",
-    "main.js": "/mrmusselman1/wedding-site-2/static/js/main.e9224fb0.js",
-    "static/js/787.097afb99.chunk.js": "/mrmusselman1/wedding-site-2/static/js/787.097afb99.chunk.js",
-    "index.html": "/mrmusselman1/wedding-site-2/index.html",
-    "main.56e6221f.css.map": "/mrmusselman1/wedding-site-2/static/css/main.56e6221f.css.map",
-    "main.e9224fb0.js.map": "/mrmusselman1/wedding-site-2/static/js/main.e9224fb0.js.map",
-    "787.097afb99.chunk.js.map": "/mrmusselman1/wedding-site-2/static/js/787.097afb99.chunk.js.map"
+    "main.css": "/static/css/main.56e6221f.css",
+    "main.js": "/static/js/main.c92bccd5.js",
+    "static/js/787.097afb99.chunk.js": "/static/js/787.097afb99.chunk.js",
+    "index.html": "/index.html",
+    "main.56e6221f.css.map": "/static/css/main.56e6221f.css.map",
+    "main.c92bccd5.js.map": "/static/js/main.c92bccd5.js.map",
+    "787.097afb99.chunk.js.map": "/static/js/787.097afb99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56e6221f.css",
-    "static/js/main.e9224fb0.js"
+    "static/js/main.c92bccd5.js"
   ]
 }
