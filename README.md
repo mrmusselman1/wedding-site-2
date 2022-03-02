@@ -41,3 +41,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Resources
 * https://parthpandyappp.medium.com/hosting-a-react-application-using-github-pages-8a509a022653
 * https://betterprogramming.pub/how-to-host-your-react-app-on-github-pages-for-free-919ad201a4cb
+* https://github.com/tschaub/gh-pages/issues/236
