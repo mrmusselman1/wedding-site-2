@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IndexHeader from 'components/Headers/IndexHeader';
 import WeddingCard from 'WeddingCard';
@@ -56,8 +56,9 @@ function App() {
                 date={date}
                 countdown={timeLeft}
             />
+
             <Container>
-                <Row>
+                <Row id="topRow">
                     <Col md="12" lg="4">
                         <WeddingCard
                             title="The Ceremony"

@@ -33,7 +33,7 @@ function IndexHeader(props) {
           }}
           ref={pageHeader}
         ></div>
-        <Container>
+        <Container className="vh-100">
           <div className="content-center brand">
             <h1 className="h1-seo">Matthew & Rebekah</h1>
             <h3>{props.date}</h3>
