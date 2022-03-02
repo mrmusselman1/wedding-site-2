@@ -27,8 +27,8 @@ const WeddingCard: React.FC<IWeddingCardCardProps> = ({
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{children}</Card.Text>
                 {
-                    links.map((link) => (
-                        <Card.Link href={link.href}>
+                    links.map((link, index) => (
+                        <Card.Link href={link.href} key={index}>
                             {link.label}
                         </Card.Link>
                     ))
@@ -37,10 +37,5 @@ const WeddingCard: React.FC<IWeddingCardCardProps> = ({
         </Card>
     )
 };
-
-// function Card(props: ICardProps)
-// {
-
-// }
 
 export default WeddingCard;

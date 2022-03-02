@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IndexHeader from 'components/Headers/IndexHeader';
 import WeddingCard from 'WeddingCard';
 
 function App() {
 
-    //const date = 'May, 21, 2022';
-    const date = 'March, 1, 2022';
+    const date = 'May 21, 2022';
     const time = '1:00 PM';
 
     const calculateTimeLeft = () => {
@@ -42,8 +41,6 @@ function App() {
         return timeString;
     }
 
-
-
     const [timeLeft, setTimeLeft] = useState<string>(calculateTimeLeft());
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -53,8 +50,6 @@ function App() {
         return () => clearTimeout(timer);
     });
 
-console.log(timeLeft);
-
     return (
         <div className="wrapper">
             <IndexHeader
@@ -63,7 +58,7 @@ console.log(timeLeft);
             />
             <Container>
                 <Row>
-                    <Col md="12">
+                    <Col md="12" lg="4">
                         <WeddingCard
                             title="The Ceremony"
                             imgSrc="https://centconllc.com/wp-content/uploads/2021/05/TD-PHOTO-01301-small.jpg"
@@ -75,7 +70,7 @@ console.log(timeLeft);
                             The Ceremony will be held at Daybreak Church in Mechanicsburg.
                         </WeddingCard>
                     </Col>
-                    <Col md="12">
+                    <Col md="12" lg="4">
                         <WeddingCard
                             title="The Reception"
                             imgSrc="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/harrisburg/MBG-building-pic_9600AC96-9690-445F-B7464BBC94521921_38d86230-3a7e-4c0e-90e8839937c6c7a3.jpg"
@@ -87,7 +82,7 @@ console.log(timeLeft);
                             We'll share a meal and a pint at Appalachain Brewing Company
                         </WeddingCard>
                     </Col>
-                    <Col md="12">
+                    <Col md="12" lg="4">
                         <WeddingCard
                             title="Accomodations"
                             imgSrc="https://ik.imgkit.net/3vlqs5axxjf/external/ik-seo/http://www.cfmedia.vfmleonardo.com/imageRepo/6/0/95/961/13/harwm-exterior-0073-hor-clsc_O/Courtyard-Harrisburg-West-Mechanicsburg-Exterior.jpg?tr=w-780%2Ch-437%2Cfo-auto"
@@ -106,9 +101,6 @@ console.log(timeLeft);
                             Please make sure you've booked your room by May 1, 2022.
                         </WeddingCard>
                     </Col>
-                </Row>
-                <Row>
-
                 </Row>
             </Container>
         </div>
