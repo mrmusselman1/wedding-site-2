@@ -130,13 +130,13 @@ function App() {
                     <Col md="12" lg="2" />
                 </Row>
                 <Row>
+
                 <blockquote className="blockquote text-center">
                     <p className="mb-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                        posuere erat a ante.
+                        And after you have suffered a little while, the God of all grace, who has called you to his eternal glory in Christ, will himself restore, confirm, strengthen, and establish you.
                     </p>
                     <footer className="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
+                        <cite title="Source Title">1 Peter 5:10 (ESV)</cite>
                     </footer>
                     </blockquote>
                 </Row>
