@@ -67,7 +67,7 @@ function App() {
                                 label: "Get Directions",
                                 href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6"
                             }]}
-                            >
+                        >
                             The Ceremony will be held at Daybreak Church in Mechanicsburg.
                         </WeddingCard>
                     </Col>
@@ -77,10 +77,10 @@ function App() {
                             imgSrc="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/harrisburg/MBG-building-pic_9600AC96-9690-445F-B7464BBC94521921_38d86230-3a7e-4c0e-90e8839937c6c7a3.jpg"
                             links={[{
                                 label: "Get Directions",
-                                href: ""
+                                href: "https://g.page/ABCMechanicsburg?share"
                             }]}
-                            >
-                            We'll share a meal and a pint at Appalachain Brewing Company
+                        >
+                            We'll share a meal and a pint at Appalachian Brewing Company
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
@@ -90,15 +90,15 @@ function App() {
                             links={[
                                 {
                                     label: "Get Directions",
-                                    href: ""
+                                    href: "https://goo.gl/maps/SZFvNGbcuz9rQDn59"
                                 },
                                 {
                                     label: "Book a Room",
-                                    href: ""
+                                    href: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1646065327858&key=GRP&app=resvlink"
                                 },
                             ]}
-                            >
-                            We've booked a block of rooms at the Courtyard Meriott for those traveling.
+                        >
+                            We've reserved a block of rooms at the Courtyard Meriott for those traveling.
                             Please make sure you've booked your room by May 1, 2022.
                         </WeddingCard>
                     </Col>
@@ -129,6 +129,18 @@ function App() {
                     </Col>
                     <Col md="12" lg="2" />
                 </Row>
+                <Row>
+                <blockquote className="blockquote text-center">
+                    <p className="mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                        posuere erat a ante.
+                    </p>
+                    <footer className="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </footer>
+                    </blockquote>
+                </Row>
+
             </Container>
             <DefaultFooter />
         </div>
