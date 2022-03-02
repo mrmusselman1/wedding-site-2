@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IndexHeader from 'components/Headers/IndexHeader';
 import WeddingCard from 'WeddingCard';
+import DefaultFooter from 'components/Footers/DefaultFooter';
 
 function App() {
 
@@ -56,7 +57,6 @@ function App() {
                 date={date}
                 countdown={timeLeft}
             />
-
             <Container>
                 <Row id="topRow">
                     <Col md="12" lg="4">
@@ -103,7 +103,34 @@ function App() {
                         </WeddingCard>
                     </Col>
                 </Row>
+                <Row>
+                    <Col md="12" lg="2" />
+                    <Col md="12" lg="4">
+                        <WeddingCard
+                            title="Registry"
+                            links={[
+                                {
+                                    label: "Amazon",
+                                    href: ""
+                                },
+                                {
+                                    label: "Zillow",
+                                    href: "https://www.zillow.com/long-beach-island-nj/"
+                                },
+                            ]}
+                        >
+                            If you're so inclined...
+                        </WeddingCard>
+                    </Col>
+                    <Col md="12" lg="4">
+                        <WeddingCard title="Address">
+                            Somehow we'll give you our new address?
+                        </WeddingCard>
+                    </Col>
+                    <Col md="12" lg="2" />
+                </Row>
             </Container>
+            <DefaultFooter />
         </div>
     );
 }

@@ -3,9 +3,9 @@ import { Card } from 'react-bootstrap';
 
 interface IWeddingCardCardProps
 {
-    imgSrc: string,
+    imgSrc?: string,
     title: string,
-    links: ILink[], 
+    links?: ILink[],
 }
 
 interface ILink 
@@ -19,15 +19,19 @@ const WeddingCard: React.FC<IWeddingCardCardProps> = ({
 }) => {
     return (
         <Card>
-            <Card.Img 
-                variant="top"
-                src={imgSrc}
-            />
+            {
+                imgSrc &&
+                    <Card.Img
+                        variant="top"
+                        src={imgSrc}
+                    />
+            }
+
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{children}</Card.Text>
                 {
-                    links.map((link, index) => (
+                    links?.map((link, index) => (
                         <Card.Link href={link.href} key={index}>
                             {link.label}
                         </Card.Link>

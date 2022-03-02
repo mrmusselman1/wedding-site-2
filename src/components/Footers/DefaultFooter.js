@@ -12,49 +12,18 @@ function DefaultFooter() {
       <footer className="footer footer-default">
         <Container>
           <nav>
-            <ul>
+            {/* <ul>
               <li>
-                <a
-                  href="https://www.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
-                >
-                  Creative Tim
-                </a>
+                Built with love by Matt and Bekah
               </li>
-              <li>
-                <a
-                  href="http://presentation.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://blog.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
+            </ul> */}
           </nav>
           <div className="copyright" id="copyright">
-            © {new Date().getFullYear()}, Designed by{" "}
-            <a
-              href="https://www.invisionapp.com?ref=nukr-default-footer"
-              target="_blank"
-            >
-              Invision
-            </a>
-            . Coded by{" "}
-            <a
-              href="https://www.creative-tim.com?ref=nukr-default-footer"
-              target="_blank"
-            >
-              Creative Tim
-            </a>
-            .
+            {/* <a target="_blank" href="">React</a>,&nbsp;
+            <a target="_blank" href="">TypeScript</a>,&nbsp;
+            and&nbsp;
+            <a target="_blank" href="https://demos.creative-tim.com/now-ui-kit-react/#/index">Now UI Kit</a>. */}
+            Site built with love by Matt and Bekah
           </div>
         </Container>
       </footer>
