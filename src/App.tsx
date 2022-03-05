@@ -63,22 +63,30 @@ function App() {
                         <WeddingCard
                             title="The Ceremony"
                             imgSrc="https://centconllc.com/wp-content/uploads/2021/05/TD-PHOTO-01301-small.jpg"
-                            links={[{
-                                label: "Get Directions",
-                                href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6"
-                            }]}
+                            links={[
+                                {
+                                    label: "Get Directions",
+                                    href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6"
+                                },
+                                {
+                                    label: "Live Stream",
+                                    href: "http://live.db.church"
+                                }
+                            ]}
                         >
-                            The Ceremony will be held at Daybreak Church in Mechanicsburg.
+                            The Ceremony will be held at Daybreak Church in Mechanicsburg. For those far away, we will be live streaming the ceremony.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
                         <WeddingCard
                             title="The Reception"
                             imgSrc="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/harrisburg/MBG-building-pic_9600AC96-9690-445F-B7464BBC94521921_38d86230-3a7e-4c0e-90e8839937c6c7a3.jpg"
-                            links={[{
-                                label: "Get Directions",
-                                href: "https://g.page/ABCMechanicsburg?share"
-                            }]}
+                            links={[
+                                {
+                                    label: "Get Directions",
+                                    href: "https://g.page/ABCMechanicsburg?share"
+                                }
+                            ]}
                         >
                             We'll share a meal and a pint at Appalachian Brewing Company
                         </WeddingCard>
@@ -99,7 +107,7 @@ function App() {
                             ]}
                         >
                             We've reserved a block of rooms at the Courtyard Meriott for those traveling.
-                            Please make sure you've booked your room by May 1, 2022.
+                            Please make sure you've booked your room by <em>May 1, 2022</em>.
                         </WeddingCard>
                     </Col>
                 </Row>
@@ -111,20 +119,16 @@ function App() {
                             links={[
                                 {
                                     label: "Amazon",
-                                    href: ""
-                                },
-                                {
-                                    label: "Zillow",
-                                    href: "https://www.zillow.com/long-beach-island-nj/"
+                                    href: "https://www.amazon.com/wedding/share/musselman-smith"
                                 },
                             ]}
                         >
-                            If you're so inclined...
+                            If you're so inclined, we've registed at Amazon.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
                         <WeddingCard title="Address">
-                            Somehow we'll give you our new address?
+                            Somehow we'll give you our new address. We haven't quite figured that out yet.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="2" />
@@ -133,10 +137,11 @@ function App() {
 
                 <blockquote className="blockquote text-center">
                     <p className="mb-0">
-                        And after you have suffered a little while, the God of all grace, who has called you to his eternal glory in Christ, will himself restore, confirm, strengthen, and establish you.
+                        Two people are better off than one, for they can help each other succeed.
+                        If one person falls, the other can reach out and help.
                     </p>
                     <footer className="blockquote-footer">
-                        <cite title="Source Title">1 Peter 5:10 (ESV)</cite>
+                        <cite title="Source Title">Ecclesiastes 4:9-10 (NLT)</cite>
                     </footer>
                     </blockquote>
                 </Row>
