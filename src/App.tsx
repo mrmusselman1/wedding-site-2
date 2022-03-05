@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import IndexHeader from 'components/Headers/IndexHeader';
 import WeddingCard from 'WeddingCard';
 import DefaultFooter from 'components/Footers/DefaultFooter';
+import Photos from 'Photos';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 function App() {
 
@@ -58,6 +60,11 @@ function App() {
                 countdown={timeLeft}
             />
             <Container>
+                {
+                    /*
+                     * Ceremony, Reception, Accomodations
+                     */
+                }
                 <Row id="topRow">
                     <Col md="12" lg="4">
                         <WeddingCard
@@ -106,11 +113,17 @@ function App() {
                                 },
                             ]}
                         >
-                            We've reserved a block of rooms at the Courtyard Meriott for those traveling.
+                            We've reserved a block of rooms at the Courtyard Marriott for those traveling.
                             Please make sure you've booked your room by <em>May 1, 2022</em>.
                         </WeddingCard>
                     </Col>
                 </Row>
+
+                {
+                    /*
+                     * Registry, Address
+                     */
+                }
                 <Row>
                     <Col md="12" lg="2" />
                     <Col md="12" lg="4">
@@ -133,16 +146,52 @@ function App() {
                     </Col>
                     <Col md="12" lg="2" />
                 </Row>
-                <Row>
 
-                <blockquote className="blockquote text-center">
-                    <p className="mb-0">
-                        Two people are better off than one, for they can help each other succeed.
-                        If one person falls, the other can reach out and help.
-                    </p>
-                    <footer className="blockquote-footer">
-                        <cite title="Source Title">Ecclesiastes 4:9-10 (NLT)</cite>
-                    </footer>
+                {
+                    /*
+                     * Photos
+                     */
+                }
+                <Row>
+                    <Col md={0} lg={1} />
+                    <Col md={12} lg={10}>
+                        <Photos
+                            photos={[
+                                '/photos/MR-14.jpeg',
+                                '/photos/MR-6.jpeg',
+                                '/photos/MR-18.jpeg',
+                                '/photos/MR.jpeg',
+                            ]}
+                        />
+                    </Col>
+                    <Col md={0} lg={1} />
+                </Row>
+
+                {
+                    /*
+                     * Spacer
+                     */
+                }
+                <Row>
+                    <Col>
+                        &nbsp;
+                    </Col>
+                </Row>
+
+                {
+                    /*
+                     * Bible Verse
+                     */
+                }
+                <Row>
+                    <blockquote className="blockquote text-center">
+                        <p className="mb-0">
+                            Two people are better off than one, for they can help each other succeed.
+                            If one person falls, the other can reach out and help.
+                        </p>
+                        <footer className="blockquote-footer">
+                            <cite title="Source Title">Ecclesiastes 4:9-10 (NLT)</cite>
+                        </footer>
                     </blockquote>
                 </Row>
 

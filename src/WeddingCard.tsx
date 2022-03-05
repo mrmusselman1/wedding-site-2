@@ -32,7 +32,7 @@ const WeddingCard: React.FC<IWeddingCardCardProps> = ({
                 <Card.Text>{children}</Card.Text>
                 {
                     links?.map((link, index) => (
-                        <Card.Link href={link.href} key={index}>
+                        <Card.Link href={link.href} key={index} target="_blank">
                             {link.label}
                         </Card.Link>
                     ))
