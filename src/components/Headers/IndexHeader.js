@@ -37,7 +37,7 @@ function IndexHeader(props) {
           <div className="content-center brand">
             <h1 className="h1-seo">Matthew & Rebekah</h1>
             <h3>{props.date}</h3>
-            <p>{props.countdown}</p>
+            {props.countdown}
           </div>
         </Container>
       </div>

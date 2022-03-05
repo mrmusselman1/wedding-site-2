@@ -28,7 +28,8 @@ function DefaultFooter() {
               <a target="_blank" href="">TypeScript</a>,&nbsp;
               and&nbsp;
               <a target="_blank" href="https://demos.creative-tim.com/now-ui-kit-react/#/index">Now UI Kit</a>. */}
-              Site built with love by Matt and Bekah
+              Site built with love
+              by <a href="https://www.matthewrmusselman.com" target="_blank">Matt</a> and <a href="https://rebekahpsmith.com" target="_blank">Bekah</a>
             </div>
           </div>
         </Container>
