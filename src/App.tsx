@@ -51,12 +51,12 @@ function App() {
                                     href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6"
                                 },
                                 {
-                                    label: "Live Stream",
+                                    label: "View Live Stream",
                                     href: "http://live.db.church"
                                 }
                             ]}
                         >
-                            The Ceremony will be held at Daybreak Church in Mechanicsburg. For those far away, we will be live streaming the ceremony.
+                            The Ceremony will be held at Daybreak Church in Mechanicsburg. For those unable to join us in person, the ceremony will be live streamed.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
@@ -70,7 +70,7 @@ function App() {
                                 }
                             ]}
                         >
-                            We'll share a meal and a pint at Appalachian Brewing Company
+                            After the ceremony, we'll share pint at Appalachian Brewing Company. Server yourself bar food, beer, and wine will be served for our time of fellowship.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
