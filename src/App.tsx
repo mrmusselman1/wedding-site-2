@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IndexHeader from 'components/Headers/IndexHeader';
@@ -101,7 +101,7 @@ function App() {
                 }
                 <Row>
                     <Col md="12" lg="2" />
-                    <Col md="12" lg="4">
+                    <Col md="6" lg="4">
                         <WeddingCard
                             title="Registry"
                             links={[
@@ -114,7 +114,7 @@ function App() {
                             If you're so inclined, we've registed at Amazon.
                         </WeddingCard>
                     </Col>
-                    <Col md="12" lg="4">
+                    <Col md="6" lg="4">
                         <WeddingCard title="Address">
                             Somehow we'll give you our new address. We haven't quite figured that out yet.
                         </WeddingCard>
@@ -141,6 +141,20 @@ function App() {
                     </Col>
                     <Col md={0} lg={1} />
                 </Row>
+
+                {
+                    /*
+                     * Attribution
+                     */
+                }
+                <Row>
+                    <Col className="text-center">
+                        <p className="small">
+                            Photos by <a href="https://www.facebook.com/irislensphotography/" target="_blank">Iris Lens Photography</a>
+                        </p>
+                    </Col>
+                </Row>
+
 
                 {
                     /*
