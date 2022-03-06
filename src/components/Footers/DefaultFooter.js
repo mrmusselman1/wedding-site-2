@@ -18,7 +18,7 @@ function DefaultFooter() {
           <div className="row">
             <nav className="col-sm-12 col-md-6 p small">
               <ul>
-                <li>
+                <li title="Time is America/New_York">
                   Last Updated {lastUpdated}
                 </li>
               </ul>

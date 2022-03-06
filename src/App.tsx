@@ -20,7 +20,7 @@ function App() {
 
     const date = 'May 21, 2022';
     const time = '1:00 PM';
-    const timezone = 'GMT-0400';
+    const timezone = 'GMT-0400'; // Eastern Daylight Time
 
     return (
         <div className="wrapper">
