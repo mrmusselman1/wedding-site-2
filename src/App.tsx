@@ -70,7 +70,7 @@ function App() {
                                 }
                             ]}
                         >
-                            After the ceremony, we'll share pint at Appalachian Brewing Company. Buffet style bar food, beer, and wine will be served.
+                            After the ceremony, we'll share a pint at Appalachian Brewing Company. Buffet style bar food, beer, and wine will be served.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
