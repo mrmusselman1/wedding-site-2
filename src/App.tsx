@@ -20,6 +20,7 @@ function App() {
 
     const date = 'May 21, 2022';
     const time = '1:00 PM';
+    const timezone = 'GMT-0400';
 
     return (
         <div className="wrapper">
@@ -34,6 +35,7 @@ function App() {
                     <Countdown
                         date={date}
                         time={time}
+                        timezone={timezone}
                     />
                 }
             />

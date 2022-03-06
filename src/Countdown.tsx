@@ -3,14 +3,15 @@ import React, { useEffect, useState } from "react";
 interface ICountdownProps {
     date: string,
     time: string,
+    timezone: string,
 }
 
 const Countdown: React.FC<ICountdownProps> = ({
-    date, time,
+    date, time, timezone
 }) => 
 {
     const calculateTimeLeft = () => {
-        let difference = +new Date(`${date} ${time}`) - +new Date();
+        let difference = +new Date(`${date} ${time} ${timezone}`) - +new Date();
         if (difference <= 0) {
             return "Today's the Day!"
         }
@@ -51,7 +52,7 @@ const Countdown: React.FC<ICountdownProps> = ({
     });
 
     return (
-        <div title={`${date} ${time} Eastern Standard Time`}>
+        <div title={`${date} ${time} Eastern Daylight Time (${timezone})`}>
             <p>{timeLeft}</p>
         </div>
     );
