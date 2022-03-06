@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IndexHeader from 'components/Headers/IndexHeader';
 import WeddingCard from 'WeddingCard';
@@ -14,6 +15,8 @@ import Countdown from 'Countdown';
  */
 
 function App() {
+
+    const [showAlert, setShowAlert] = useState(true);
 
     const date = 'May 21, 2022';
     const time = '1:00 PM';
@@ -40,7 +43,25 @@ function App() {
                      * Ceremony, Reception, Accomodations
                      */
                 }
+
                 <Row id="topRow">
+                    <Col lg="2"/>
+                    <Col lg="8">
+                        {
+                            showAlert &&
+                                <Alert variant='warning' dismissible onClose={() => setShowAlert(false)}>
+                                    <Alert.Heading>Welcome to our Wedding Site!</Alert.Heading>
+                                    <p>
+                                        Our site is currently under construction, but you're welcome to take a look.
+                                        Please check back frequently as we add more details about our wedding (and have fun programming outside of work)!
+                                    </p>
+                                </Alert>
+                        }
+                    </Col>
+                    <Col lg="2"/>
+                </Row>
+
+                <Row>
                     <Col md="12" lg="4">
                         <WeddingCard
                             title="The Ceremony"
