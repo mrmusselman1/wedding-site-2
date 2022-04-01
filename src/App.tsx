@@ -53,10 +53,10 @@ function App() {
                             showAlert &&
                                 <Alert variant='warning' dismissible onClose={() => setShowAlert(false)}>
                                     <Alert.Heading>Welcome to our Wedding Site!</Alert.Heading>
-                                    <p>
-                                        Our site is currently under construction, but you're welcome to take a look.
-                                        Please check back frequently as we add more details about our wedding (and have fun programming outside of work)!
-                                    </p>
+
+                                    Our site is currently under construction, but you're welcome to take a look.
+                                    Please check back frequently as we add more details about our wedding (and have fun programming outside of work)!
+
                                 </Alert>
                         }
                     </Col>
@@ -79,7 +79,8 @@ function App() {
                                 }
                             ]}
                         >
-                            The Ceremony will be held at Daybreak Church in Mechanicsburg. For those unable to join us in person, the ceremony will be live streamed.
+                            The Ceremony will be held at Daybreak Church in Mechanicsburg at 1pm.
+                            For those unable to join us in person, the ceremony will be live streamed.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
@@ -93,7 +94,8 @@ function App() {
                                 }
                             ]}
                         >
-                            After the ceremony, we'll share a pint at Appalachian Brewing Company. Buffet style bar food, beer, and wine will be served.
+                            After the ceremony, we'll share a pint at Appalachian Brewing Company.
+                            Buffet style bar food, beer, and wine will be served, starting at 4pm that afternoon.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
@@ -134,7 +136,7 @@ function App() {
                                 },
                             ]}
                         >
-                            If you're so inclined, we've registed at Amazon.
+                            If you're so inclined, we've registered at Amazon.
                         </WeddingCard>
                     </Col>
                     <Col md="6" lg="4">
