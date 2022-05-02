@@ -16,6 +16,8 @@ import Countdown from 'Countdown';
 
 function App() {
 
+    const liveStreamUrl = "https://www.youtube.com/channel/UC5dwWwlFlFmMf-hPOXdnpyg";
+
     const [showAlert, setShowAlert] = useState(true);
 
     const date = 'May 21, 2022';
@@ -54,8 +56,8 @@ function App() {
                                 <Alert variant='warning' dismissible onClose={() => setShowAlert(false)}>
                                     <Alert.Heading>Welcome to our Wedding Site!</Alert.Heading>
 
-                                    Our site is currently under construction, but you're welcome to take a look.
-                                    Please check back frequently as we add more details about our wedding (and have fun programming outside of work)!
+                                    We are in the process of determing how to live stream our ceremony.
+                                    Please check back here for the latest link to the <a href={liveStreamUrl} target="_blank">Live Stream</a>!
 
                                 </Alert>
                         }
@@ -71,16 +73,16 @@ function App() {
                             links={[
                                 {
                                     label: "Get Directions",
-                                    href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6"
+                                    href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6",
                                 },
                                 {
                                     label: "View Live Stream",
-                                    href: "http://live.db.church"
+                                    href: liveStreamUrl,
                                 }
                             ]}
                         >
                             The Ceremony will be held at Daybreak Church in Mechanicsburg at 1pm.
-                            For those unable to join us in person, the ceremony will be live streamed.
+                            For those unable to join us in person, the ceremony will be live streamed on our YouTube channel.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="4">
