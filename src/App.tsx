@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Alert } from 'react-bootstrap';
+// import { Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IndexHeader from 'components/Headers/IndexHeader';
 import WeddingCard from 'WeddingCard';
@@ -16,9 +16,9 @@ import Countdown from 'Countdown';
 
 function App() {
 
-    const liveStreamUrl = "https://www.youtube.com/channel/UC5dwWwlFlFmMf-hPOXdnpyg";
+    // const liveStreamUrl = "https://www.youtube.com/channel/UC5dwWwlFlFmMf-hPOXdnpyg";
 
-    const [showAlert, setShowAlert] = useState(true);
+    // const [showAlert, setShowAlert] = useState(true);
 
     const date = 'May 21, 2022';
     const time = '1:00 PM';
@@ -48,7 +48,7 @@ function App() {
                      */
                 }
 
-                <Row id="topRow">
+                {/* <Row id="topRow">
                     <Col lg="2"/>
                     <Col lg="8">
                         {
@@ -63,29 +63,66 @@ function App() {
                         }
                     </Col>
                     <Col lg="2"/>
-                </Row>
+                </Row> */}
 
-                <Row>
-                    <Col md="12" lg="4">
+                <Row id="topRow">
+                    <Col md="12" lg="3">
+                        <WeddingCard
+                            title="Virginia Celebration"
+                            imgSrc="https://lonelyplanetimages.imgix.net/a/g/hi/t/849f787f68b13ef33024920cc82ad5b0-fredericksburg.jpg?sharp=10&vib=20&w=600"
+                            // links={[
+                            //     {
+                            //         label: "Get Directions",
+                            //         href: "https://goo.gl/maps/poVcKKdE8vAjSWe89"
+                            //     }
+                            // ]}
+                        >
+                            We will hold a celebration gathering at Rachael's house in Fredericksburg, Virginia.
+                            <br />
+                            Please contact Rachael for more details.
+                        </WeddingCard>
+                    </Col>
+                    <Col md="12" lg="6">
                         <WeddingCard
                             title="The Ceremony"
                             imgSrc="https://centconllc.com/wp-content/uploads/2021/05/TD-PHOTO-01301-small.jpg"
                             links={[
+                                // {
+                                //     label: "Get Directions",
+                                //     href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6",
+                                // },
+                                // {
+                                //     label: "View Live Stream",
+                                //     href: liveStreamUrl,
+                                // }
                                 {
-                                    label: "Get Directions",
-                                    href: "https://goo.gl/maps/MvcMADHcQxgCj9Az6",
-                                },
-                                {
-                                    label: "View Live Stream",
-                                    href: liveStreamUrl,
+                                    label: "View Recording",
+                                    href: "https://youtu.be/6BJC1ZlIJb4"
                                 }
                             ]}
                         >
-                            The Ceremony will be held at Daybreak Church in Mechanicsburg at 1pm.
-                            For those unable to join us in person, the ceremony will be live streamed on our YouTube channel.
+                            Our Ceremony was held at Daybreak Church in Mechanicsburg.
+                            A recording of our ceremony is available on YouTube.
                         </WeddingCard>
                     </Col>
-                    <Col md="12" lg="4">
+                    <Col md="12" lg="3">
+                        <WeddingCard
+                            title="New Hampshire Celebration"
+                            imgSrc="https://i.pinimg.com/736x/67/2c/26/672c26ea0d2f8b698371250258a05638.jpg"
+                            links={[
+                                {
+                                    label: "Get Directions",
+                                    href: "https://goo.gl/maps/poVcKKdE8vAjSWe89"
+                                }
+                            ]}
+                        >
+                            We will hold a celebration gathering at Trinity Baptist Chuch in Nashua, New Hampshire.
+                            <br />
+                            Please contact Lisa for more details.
+                        </WeddingCard>
+                    </Col>
+
+                    {/* <Col md="12" lg="4">
                         <WeddingCard
                             title="The Reception"
                             imgSrc="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/harrisburg/MBG-building-pic_9600AC96-9690-445F-B7464BBC94521921_38d86230-3a7e-4c0e-90e8839937c6c7a3.jpg"
@@ -99,8 +136,8 @@ function App() {
                             After the ceremony, we'll share a pint at Appalachian Brewing Company.
                             Buffet style bar food, beer, and wine will be served, starting at 4pm that afternoon.
                         </WeddingCard>
-                    </Col>
-                    <Col md="12" lg="4">
+                    </Col> */}
+                    {/* <Col md="12" lg="4">
                         <WeddingCard
                             title="Accomodations"
                             imgSrc="https://ik.imgkit.net/3vlqs5axxjf/external/ik-seo/http://www.cfmedia.vfmleonardo.com/imageRepo/6/0/95/961/13/harwm-exterior-0073-hor-clsc_O/Courtyard-Harrisburg-West-Mechanicsburg-Exterior.jpg?tr=w-780%2Ch-437%2Cfo-auto"
@@ -118,7 +155,7 @@ function App() {
                             We've reserved a block of rooms at the Courtyard Marriott for those traveling.
                             Please make sure you've booked your room by <em>May 1, 2022</em>.
                         </WeddingCard>
-                    </Col>
+                    </Col> */}
                 </Row>
 
                 {
@@ -139,11 +176,13 @@ function App() {
                             ]}
                         >
                             If you're so inclined, we've registered at Amazon.
+                            Since we're combining two households, we already have many household items and do not need many things.
                         </WeddingCard>
                     </Col>
                     <Col md="6" lg="4">
                         <WeddingCard title="Address">
-                            Somehow we'll give you our new address. We haven't quite figured that out yet.
+                            We will send everyone our new address shortly after we've acclimated to married life.
+                            Please sign our guest book and include your address so that we can update you.
                         </WeddingCard>
                     </Col>
                     <Col md="12" lg="2" />
@@ -181,7 +220,6 @@ function App() {
                         </p>
                     </Col>
                 </Row>
-
 
                 {
                     /*

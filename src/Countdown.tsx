@@ -12,8 +12,12 @@ const Countdown: React.FC<ICountdownProps> = ({
 {
     const calculateTimeLeft = () => {
         let difference = +new Date(`${date} ${time} ${timezone}`) - +new Date();
+
+        let timeString = '';
         if (difference <= 0) {
-            return "Today's the Day!"
+            // return "Today's the Day!"
+            timeString += "Married for\n";
+            difference *= -1;
         }
 
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -21,21 +25,21 @@ const Countdown: React.FC<ICountdownProps> = ({
         const minutes = Math.floor((difference / 1000 / 60) % 60);
         const seconds = Math.floor((difference / 1000) % 60);
 
-        let timeString = '';
+
         if (days > 0) {
-            let dayLabel = days !== 0 ? 'days' : 'day';
+            let dayLabel = days !== 1 ? 'days' : 'day';
             timeString += `${days} ${dayLabel} `;
         }
         if (hours > 0) {
-            let hourLabel = hours !== 0 ? 'hours' : 'hour';
+            let hourLabel = hours !== 1 ? 'hours' : 'hour';
             timeString += `${hours} ${hourLabel} `;
         }
         if (minutes > 0) {
-            let minuteLabel = minutes !== 0 ? 'minutes' : 'minute';
+            let minuteLabel = minutes !== 1 ? 'minutes' : 'minute';
             timeString += `${minutes} ${minuteLabel} `;
         }
         if (seconds > 0) {
-            let secondsLabel = seconds !== 0 ? 'seconds' : 'second';
+            let secondsLabel = seconds !== 1 ? 'seconds' : 'second';
             timeString += `${seconds} ${secondsLabel}`;
         }
 
